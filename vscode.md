@@ -1,12 +1,16 @@
 
 # vscode快捷键
-打开默认终端: ctrl+[`]   
-新建一个终端：ctrl+shift+[`]  
+打开默认终端: ```ctrl+[`]```   
+新建一个终端：```ctrl+shift+[`]```  
+
+# vscode 中设置  
+隐藏文件： 例如想要隐藏`.git`文件，设置中搜索`files.exclude`，然后设置。    
 
 
-# vscode中git
 
-## remote命令
+# vscode中git  
+
+## remote命令  
 第一次使用的时候要手动绑定一个自己的远程GitHub库：  
 ```
 git remote add origin
