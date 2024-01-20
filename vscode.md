@@ -21,6 +21,13 @@ git remote add origin https://github.com/kitefano/huashan
 之后就可以直接push了。  
 如果要push别的仓库，则需要重新remote。  
 
+## 不需要上传的文件可以设置不上传
+1. 新建一个文件：```.gitignore```  
+2. 右键不需要的文件或文件夹，选择“复制相对路径”，把`\`换成`/`, 然后在最前面加个`/`。  
+3. 把这个路径放到`.gitignore`文件里。被复制进这个文件的文件会变灰色。  
+4. 这样上传就会不上传这些文件了。  
+
+
 
 # markdown
 [markdown使用](https://www.bilibili.com/video/BV1JA411h7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94)
