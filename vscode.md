@@ -4,7 +4,7 @@
 新建一个终端：ctrl+shift+[`]  
 
 
-# git
+# vscode中git
 
 ## remote命令
 第一次使用的时候要手动绑定一个自己的远程GitHub库：  
