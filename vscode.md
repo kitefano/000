@@ -42,3 +42,22 @@ git remote add origin https://github.com/kitefano/huashan
 段： 结尾空两格， 另起一行，再空一行。  
 
 
+# chatgpt
+## 插件ChatGPT -- lxk(不好使报错)
+安装插件chatgpt。  
+获取openai的key，给vscode授权：  
+1. https://platform.openai.com/api-keys  
+2. 在`API keys`添加key。  
+3. 回到vscode， f1， ChatGPT: Bind your own API key， 把复制的key填入。  
+
+## copilot
+Copilot免费激活教程方法  
+(https://www.bilibili.com/video/BV1pu4y1K7h1/?spm_id_from=autoNext&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94)  
+
+使用：  
+(https://www.youtube.com/watch?v=49nFJJuYIFg)  
+(https://www.youtube.com/watch?v=wRsgeBoi2_A)  
+(https://www.youtube.com/watch?v=Odmm8CJO8Xw)  
+
+
+
