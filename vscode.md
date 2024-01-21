@@ -3,7 +3,7 @@
 打开默认终端: ```ctrl+[`]```   
 新建一个终端：```ctrl+shift+[`]```  
 
-# vscode 中设置  
+# vscode设置  
 隐藏文件： 例如想要隐藏`.git`文件，设置中搜索`files.exclude`，然后设置。    
 
 
@@ -42,17 +42,17 @@ git remote add origin https://github.com/kitefano/huashan
 段： 结尾空两格， 另起一行，再空一行。  
 
 
-# chatgpt
-## 插件ChatGPT -- lxk(不好使报错)
-安装插件chatgpt。  
-获取openai的key，给vscode授权：  
-1. https://platform.openai.com/api-keys  
-2. 在`API keys`添加key。  
-3. 回到vscode， f1， ChatGPT: Bind your own API key， 把复制的key填入。  
-
-## copilot
-Copilot免费激活教程方法  
+# copilot
+## Copilot免费激活教程方法  
 (https://www.bilibili.com/video/BV1pu4y1K7h1/?spm_id_from=autoNext&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94)  
+内容：  
+copilot激活用的工具自取即可：https://www.2024ai.xyz  
+工具的文档：https://www.kdocs.cn/l/clRGREhjMwEW  
+免费的码：https://www.2024ai.xyz/freeCode.html  
+一个月的激活码： 20240121JHPXFSYD  
+激活的时候VScode要退出GitHub账号  
+
+
 
 使用：  
 (https://www.youtube.com/watch?v=49nFJJuYIFg)  
