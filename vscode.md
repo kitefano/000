@@ -52,9 +52,7 @@ copilot激活用的工具自取即可：https://www.2024ai.xyz
 一个月的激活码： 20240121JHPXFSYD  
 激活的时候VScode要退出GitHub账号  
 
-
-
-使用：  
+## 使用：  
 (https://www.youtube.com/watch?v=49nFJJuYIFg)  
 (https://www.youtube.com/watch?v=wRsgeBoi2_A)  
 (https://www.youtube.com/watch?v=Odmm8CJO8Xw)  
