@@ -83,7 +83,9 @@ $ git config --global https.proxy http://127.0.0.1:10809
 copilot激活用的工具自取即可：https://www.2024ai.xyz  
 工具的文档：https://www.kdocs.cn/l/clRGREhjMwEW  
 免费的码：https://www.2024ai.xyz/freeCode.html  
-一个月的激活码： 20240121JHPXFSYD  
+一个月的激活码：   
+20240121JHPXFSYD  
+20240123FQMMYC60  
 激活的时候VScode要退出GitHub账号  
 
 ## 使用：  
