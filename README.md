@@ -15,6 +15,7 @@ tool(https://github.com/kitefano/tool.git)
 # 开源项目
 ## 日志  
 c/cpp： 
+spdlog(https://github.com/gabime/spdlog)  
 (https://github.com/log4cplus/log4cplus)  
 apache的日志子项目(https://github.com/apache/logging-log4cxx) 
 (https://github.com/orocos-toolchain/log4cpp?tab=readme-ov-file)  
