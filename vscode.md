@@ -38,27 +38,27 @@ git remote add origin https://github.com/kitefano/huashan
 4. 这样上传就会不上传这些文件了。  
 
 ## 设置代理
-1. 查看git配置
+1. 查看git配置  
 ```
-$ git config --list
+$ git config --list  
 ```
-2. 清理代理
+2. 清理代理  
 ```
-$ git config --global --unset http.proxy
-$ git config --global --unset https.proxy
+$ git config --global --unset http.proxy  
+$ git config --global --unset https.proxy  
 ```
-3. 设置代理
+3. 设置代理  
 ```
-$ git config --global http.proxy http://127.0.0.1:10809
-$ git config --global https.proxy http://127.0.0.1:10809
+$ git config --global http.proxy http://127.0.0.1:10809  
+$ git config --global https.proxy http://127.0.0.1:10809  
 ```
-验证设置代理是否有效：
+验证设置代理是否有效：  
 ```
-① Git clone “git上的一个项目试试能不能clone下来。”
-② $ ping github.com
+① Git clone “git上的一个项目试试能不能clone下来。”  
+② $ ping github.com  
 ```
-4. 10809在哪里获取
-在vpn中获取。
+4. 10809在哪里获取  
+在vpn中获取。  
 
 
 
