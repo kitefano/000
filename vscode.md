@@ -4,8 +4,18 @@
 新建一个终端：```ctrl+shift+[`]```  
 
 # vscode设置  
-隐藏文件： 例如想要隐藏`.git`文件，设置中搜索`files.exclude`，然后设置。    
-
+## 隐藏文件： 
+例如想要隐藏`.git`文件，设置中搜索`files.exclude`，然后设置。   
+## 设置自定缩放
+(https://blog.csdn.net/weixin_42046702/article/details/113801796)  
+1. 设置搜索zoom，勾选  
+2. 设置中搜索：Font Ligatures， 然后点击"在settings.json中编辑"
+```
+    "editor.fontLigatures": false, // 在这一句后面加："editor.mouseWheelZoom": true，记得逗号。
+    "editor.mouseWheelZoom": true
+```
+## 代码和控制台有乱码
+设置代码中文在控制台输出中文不是乱码：设置搜索encoding，选gb18030
 
 
 # vscode中git  
@@ -26,6 +36,30 @@ git remote add origin https://github.com/kitefano/huashan
 2. 右键不需要的文件或文件夹，选择“复制相对路径”，把`\`换成`/`, 然后在最前面加个`/`。  
 3. 把这个路径放到`.gitignore`文件里。被复制进这个文件的文件会变灰色。  
 4. 这样上传就会不上传这些文件了。  
+
+## 设置代理
+1. 查看git配置
+```
+$ git config --list
+```
+2. 清理代理
+```
+$ git config --global --unset http.proxy
+$ git config --global --unset https.proxy
+```
+3. 设置代理
+```
+$ git config --global http.proxy http://127.0.0.1:10809
+$ git config --global https.proxy http://127.0.0.1:10809
+```
+验证设置代理是否有效：
+```
+① Git clone “git上的一个项目试试能不能clone下来。”
+② $ ping github.com
+```
+4. 10809在哪里获取
+在vpn中获取。
+
 
 
 
