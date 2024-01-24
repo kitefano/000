@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 
-std::string getlocalip()
+std::string GetLocalIp()
 {
     std::string ip("127.0.0.1");
     std::string ipconfig_content;
@@ -53,7 +53,7 @@ int main(int argc, char** argv)
 {
     std::cout << "Hello World!\n";
 
-    std::cout << getlocalip() << std::endl;
+    std::cout << GetLocalIp() << std::endl;
     // 192.168.117.41
 
     return 0;
@@ -69,7 +69,7 @@ int main(int argc, char** argv)
 #include <ws2tcpip.h>
 #pragma comment(lib, "Ws2_32.lib")
 
-std::string getlocalip()
+std::string GetLocalIp()
 {
     WSADATA wsaData;
     if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
@@ -110,7 +110,7 @@ int main(int argc, char** argv)
 {
     std::cout << "Hello World!\n";
 
-    std::cout << getlocalip() << std::endl;
+    std::cout << GetLocalIp() << std::endl;
 
     return 0;
 }
