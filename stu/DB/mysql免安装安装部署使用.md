@@ -70,3 +70,7 @@ exit;
 
 lxk-新密码：  
 root@_123123  
+
+登录：  
+mysql -u root -p新密码   
+

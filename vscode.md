@@ -95,3 +95,39 @@ copilot激活用的工具自取即可：https://www.2024ai.xyz
 
 
 
+# shell
+## vscode远程连接Linux服务器
+(https://www.google.com/search?q=vscode%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8&oq=vscode%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8&gs_lcrp=EgZjaHJvbWUyDggAEEUYORhDGIAEGIoFMgcIARAAGIAEMgkIAhAAGAwYgAQyBwgDEAAYgAQyCQgEEAAYDBiABDIHCAUQABiABDIJCAYQABgMGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAEqAIAsAIA&sourceid=chrome&ie=UTF-8)
+(https://zhuanlan.zhihu.com/p/141205262)    
+
+检查是否安装OpenSSH  
+Windows10下检查是否已经安装OpenSSH的方法：  
+```shell
+# 按下快捷键Win + X，选择Windows PoweShell（管理员），输入以下指令：
+Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
+# 如果电脑未安装OpenSSH，则State会显示NotPresent
+```
+如果未安装，则输入指令：  
+```shell
+Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0  
+```
+OpenSSH安装成功后，Win+R输入cmd进入终端，输入ssh命令应该得到如下结果：  
+```shell
+PS C:\Windows\system32> ssh
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+```
+
+安装Remote-SSH
+Remote-SSH是VScode的插件，安装完VScode以后，直接在插件中搜索ssh，即可找到Remote-SSH，点击install安装。  
+
+配置Remote-SSH  
+安装完Remote-SSH以后左侧会出现一个远程资源管理的图标，选择SSH Targets，进入config配置文件  
+在配置文件中设置服务器信息，输入HostName和User，保存以后左侧会出现对应机器名称。  
+```shell
+
+```
+
+
+
+
+
