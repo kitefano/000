@@ -117,15 +117,30 @@ PS C:\Windows\system32> ssh
 usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
 ```
 
-安装Remote-SSH
+安装Remote-SSH  
 Remote-SSH是VScode的插件，安装完VScode以后，直接在插件中搜索ssh，即可找到Remote-SSH，点击install安装。  
 
 配置Remote-SSH  
 安装完Remote-SSH以后左侧会出现一个远程资源管理的图标，选择SSH Targets，进入config配置文件  
 在配置文件中设置服务器信息，输入HostName和User，保存以后左侧会出现对应机器名称。  
 ```shell
+Host alias #随意机器名称
+    HostName hostname # 服务器ip地址
+    User user # 用户名
+```  
 
-```
+设置中搜索“show login terminal”， 勾选Always reveal the SSH login terminal.  
+
+SSH TARGETS下的服务器旁边的按钮纽行连接，弹出让你输入密码   
+
+这里可能会弹出让你选择服务器的平台： 选择linux  
+
+成功连上服务器，点击有右侧的+号创建服务器的终端窗口，可以正常使用了！  (关键点：另起一个终端。)
+
+
+## 通过vscode连接远程Linux服务器，上传下载文件
+使用ftp  
+(https://www.cnblogs.com/biaogejiushibiao/p/9268533.html)  
 
 
 

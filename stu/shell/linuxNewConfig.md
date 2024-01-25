@@ -10,6 +10,6 @@ $ vim .vimrc
 ```shell
 $ vim .bashrc
 # 添加配置
-alais lt='ls -ltr'
+alias lt='ls -ltr'
 alias c='clear'
 ```
