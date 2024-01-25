@@ -1,6 +1,6 @@
 # 代码中和数据库交互  
 
-# cpp 代码与 mysql 交互
+# MySQL C API
 ## 配置
 在VS2010的附加包含目录中添加\MySQL\MySQL Server 5.1\include。在安装MySql的目录下找。 把libmysql.dll和libmysql.lib文件拷贝到所建的工程目录下。
 
@@ -150,6 +150,26 @@ mysql_store_result() 检索一个完整的结果集合给客户。
 mysql_thread_id() 返回当前线程的ID。  
 mysql_use_result() 初始化一个一行一行地结果集合的检索。 
 ```
+
+# MySQL C API 和 MySQL Connector/C++ 异同
+MySQL Connector/C++ 是 MySQL 官方提供的 C++ 接口库，允许开发人员使用 C++ 语言与 MySQL 数据库进行交互。它提供了面向对象的接口，使得与 MySQL 数据库的交互更加方便。而 MySQL 原生的 C API 是基于 C 语言的低级别接口，允许开发人员直接使用 C 语言与 MySQL 数据库进行交互。两者的主要区别在于面向对象的封装程度和使用方式。MySQL Connector/C++ 更适合于 C++ 开发者，而 MySQL 原生的 C API 更适合于需要更底层控制的开发者。    
+
+选择使用的考虑因素：
+项目需求： 如果你在进行 C++ 编程，特别是使用了现代 C++ 特性，那么 MySQL Connector/C++ 提供的面向对象的接口可能更符合你的编码风格。  
+项目历史： 一些旧的项目可能会使用 MySQL C API，因为它是较早引入的，并且在许多 C 项目中被广泛使用。  
+性能需求： 在一些性能敏感的场景，可能会有人选择 MySQL C API，因为它的底层调用方式更为直接，减少了一些对象封装的开销。  
+
+# MySQL Connector/C++
+
+
+
+
+
+
+
+
+
+
 
 
 

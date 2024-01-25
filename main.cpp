@@ -13,8 +13,6 @@ int main()
 
 
 
-
-
 #if 0
 #include <mysql/mysql.h>
 
@@ -67,3 +65,12 @@ if (mysql_real_connect(&mysql, "localhost", "user", "password", "database", 0, N
 }
 
 #endif 
+
+
+
+
+
+
+
+
+
