@@ -94,6 +94,10 @@ copilot激活用的工具自取即可：https://www.2024ai.xyz
 (https://www.youtube.com/watch?v=Odmm8CJO8Xw)  
 
 
+# codeium
+## vscode 中搜索
+
+
 
 # shell
 ## vscode远程连接Linux服务器

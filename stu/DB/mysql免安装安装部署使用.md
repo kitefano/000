@@ -69,7 +69,7 @@ exit;
 在path中添加bin目录： S:\mysql-8.2.0-winx64\bin  
 
 lxk-新密码：  
-root@_123123  
+kai@_123123  
 
 登录：  
 mysql -u root -p新密码   

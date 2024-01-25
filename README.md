@@ -16,8 +16,33 @@ tool(https://github.com/kitefano/tool.git)
 ## 日志  
 c/cpp： 
 ### spdlog(https://github.com/gabime/spdlog)  
-1. 使用：下载源码， include文件中包括spdlog源码和头文件，使用的时候只需要把include的放到项目中，然后把include路径添加到头文件搜索路径中。
-2. 
+部署  
+下载源码， include文件中包括spdlog源码和头文件，使用的时候只需要把include的放到项目中，然后把include路径添加到头文件搜索路径中。  
+
+控制台输出日志  
+```c++
+#include <spdlog/spdlog.h>
+int main() {
+    // 创建彩色输出的控制台日志记录器
+    auto console = spdlog::stdout_color_mt("console");
+    
+    // 创建彩色输出的标准错误日志记录器
+    auto err_logger = spdlog::stderr_color_mt("stderr");
+
+    // 设置日志级别为info
+    console->set_level(spdlog::level::info);
+    err_logger->set_level(spdlog::level::err);  // 设置错误级别
+
+    // 输出不同级别的日志消息
+    console->info("This is an info message on console");
+    console->warn("This is a warning message on console");
+    err_logger->error("This is an error message on stderr");
+
+    return 0;
+}
+```
+
+
 
 
 (https://github.com/log4cplus/log4cplus)  

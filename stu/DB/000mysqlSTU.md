@@ -88,16 +88,7 @@ SHOW INDEX FROM 数据表:
 显示数据表的详细索引信息，包括PRIMARY KEY（主键）。  
 
 
-# sql连接  
-## c++连接 sql 数据库
-参考教程(https://developer.aliyun.com/article/386933)  
-(https://blog.csdn.net/to_Baidu/article/details/58709499)  
 
-
-
-
-
-## csharp 连接sql 数据库
 
 
 

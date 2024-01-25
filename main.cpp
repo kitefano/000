@@ -1,5 +1,7 @@
 #include <iostream>
 
+
+
 int main()
 {
     std::cout << "Hello, World!" << std::endl;
@@ -13,52 +15,55 @@ int main()
 
 
 
-#include <iostream>
-#include <string>
+#if 0
+#include <mysql/mysql.h>
 
-// 模拟 WritingPad 控件
-class WritingPadControl {
-public:
-    void SetSignatureCallback(void (*callback)(const std::string&)) {
-        signatureCallback = callback;
-    }
+MYSQL mysql;
 
-    void SimulateSignatureEvent(const std::string& signatureData) {
-        if (signatureCallback) {
-            signatureCallback(signatureData);
+// 初始化连接
+mysql_init(&mysql);
+
+// 连接到 MySQL 服务器
+if (mysql_real_connect(&mysql, "localhost", "user", "password", "database", 0, NULL, 0)) {
+    // 执行 SQL 查询
+    int result = mysql_real_query(&mysql, "SELECT * FROM your_table", strlen("SELECT * FROM your_table"));
+
+    if (result == 0) {
+        // 查询执行成功
+        // 处理结果集等操作
+
+        // 获取结果集
+        MYSQL_RES *result_set = mysql_store_result(&mysql);
+
+        if (result_set) {
+            // 获取列数
+            int num_fields = mysql_num_fields(result_set);
+
+            // 逐行获取数据
+            MYSQL_ROW row;
+            while ((row = mysql_fetch_row(result_set))) {
+                for (int i = 0; i < num_fields; i++) {
+                    printf("%s ", row[i] ? row[i] : "NULL");
+                }
+                printf("\n");
+            }
+
+            // 释放结果集
+            mysql_free_result(result_set);
+        } else {
+            // 处理获取结果集失败的情况
+            fprintf(stderr, "Failed to store result set: %s\n", mysql_error(&mysql));
         }
+    } else {
+        // 查询执行失败
+        fprintf(stderr, "Query failed: %s\n", mysql_error(&mysql));
     }
 
-private:
-    void (*signatureCallback)(const std::string&) = nullptr;
-};
-
-// 模拟写入文件的函数
-void WriteToFile(const std::string& filePath, const std::string& dataToWrite) {
-    std::cout << "Writing to file: " << filePath << std::endl;
-    std::cout << "Data: " << dataToWrite << std::endl;
+    // 关闭连接
+    mysql_close(&mysql);
+} else {
+    // 连接失败
+    fprintf(stderr, "Connection failed: %s\n", mysql_error(&mysql));
 }
 
-// 设置回调函数的外部函数
-void SetSignatureCallback(WritingPadControl& writingPad, void (*callback)(const std::string&)) {
-    writingPad.SetSignatureCallback(callback);
-}
-
-// 回调函数
-void SignatureCallback(const std::string& signatureData) {
-    std::string filePath = "SignFile.txt";
-    WriteToFile(filePath, signatureData);
-}
-
-int main() {
-    WritingPadControl writingPad;
-
-    // 设置回调函数
-    SetSignatureCallback(writingPad, SignatureCallback);
-
-    // 模拟签名事件
-    std::string simulatedSignatureData = "SimulatedSignatureData";
-    writingPad.SimulateSignatureEvent(simulatedSignatureData);
-
-    return 0;
-}
+#endif 
