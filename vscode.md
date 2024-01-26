@@ -95,13 +95,14 @@ copilot激活用的工具自取即可：https://www.2024ai.xyz
 
 
 # codeium
-## vscode 中搜索
+## vscode 中搜索 安装
+
+## clion 中搜索安装 -- 不好使  
 
 
 
 # shell
 ## vscode远程连接Linux服务器
-(https://www.google.com/search?q=vscode%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8&oq=vscode%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8&gs_lcrp=EgZjaHJvbWUyDggAEEUYORhDGIAEGIoFMgcIARAAGIAEMgkIAhAAGAwYgAQyBwgDEAAYgAQyCQgEEAAYDBiABDIHCAUQABiABDIJCAYQABgMGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAEqAIAsAIA&sourceid=chrome&ie=UTF-8)
 (https://zhuanlan.zhihu.com/p/141205262)    
 
 检查是否安装OpenSSH  
@@ -145,6 +146,14 @@ SSH TARGETS下的服务器旁边的按钮纽行连接，弹出让你输入密码
 ## 通过vscode连接远程Linux服务器，上传下载文件
 使用ftp  
 (https://www.cnblogs.com/biaogejiushibiao/p/9268533.html)  
+
+## 错误处理
+1. 如果登录的Linux 机器已经释放了， 重新又建立了一个Linux， 但是ip 没有变，此时需要删除原来机器的key，才能再登录：
+```shell
+# 删除命令
+ssh-keygen -R 123.60.60.85
+```
+
 
 
 

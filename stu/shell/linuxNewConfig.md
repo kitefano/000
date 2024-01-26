@@ -9,7 +9,7 @@ $ vim .vimrc
 # .bashrc
 ```shell
 $ vim .bashrc
-# 添加配置
+# add by lxk@date for 添加配置
 alias lt='ls -ltr'
 alias c='clear'
 ```

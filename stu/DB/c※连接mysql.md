@@ -1,4 +1,4 @@
-# 代码中和数据库交互  
+# c※连接mysql    
 
 # MySQL C API
 ## 配置
@@ -160,6 +160,8 @@ MySQL Connector/C++ 是 MySQL 官方提供的 C++ 接口库，允许开发人员
 性能需求： 在一些性能敏感的场景，可能会有人选择 MySQL C API，因为它的底层调用方式更为直接，减少了一些对象封装的开销。  
 
 # MySQL Connector/C++
+MySQL Connector/C++ 连接可能还需要boost 库。  
+
 
 
 
