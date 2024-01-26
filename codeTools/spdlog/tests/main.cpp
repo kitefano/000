@@ -8,4 +8,3 @@
 #if defined(__GNUC__) && __GNUC__ == 12
     #pragma GCC diagnostic pop
 #endif
-
