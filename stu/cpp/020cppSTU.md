@@ -2,7 +2,7 @@
 
 
 ## Boost 库
-简介(https://baike.baidu.com/item/Boost%E5%BA%93/10671694)  
+百科(https://baike.baidu.com/item/Boost%E5%BA%93/10671694)  
 官网(https://www.boost.org/)  
 
 库下载  
