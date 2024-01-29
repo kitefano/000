@@ -13,3 +13,20 @@ VS-GitHub | 使用VisualStudio运行GitHub开源项目
 世界公认第一的Docker容器的学习方法  
 (https://www.bilibili.com/video/BV1vN4y1W78n/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94)  
 
+过去一年中涌现的15个新技术潮流:  
+https://36kr.com/p/2114428939012230  
+
+# C++/WinRT 简介:  
+https://learn.microsoft.com/zh-cn/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt  
+
+# 注册表 操作  
+
+# 编程模式，例如：单例  
+
+# c++ c++中数据类型转换有哪几种方式
+
+
+
+
+
+
