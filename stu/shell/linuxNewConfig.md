@@ -12,4 +12,6 @@ $ vim .bashrc
 # add by lxk@date for 添加配置
 alias lt='ls -ltr'
 alias c='clear'
+alias cdl='cd ~/lxk'
+alias mc='make clean'
 ```
