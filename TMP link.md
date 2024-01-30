@@ -25,6 +25,19 @@ https://learn.microsoft.com/zh-cn/windows/uwp/cpp-and-winrt-apis/intro-to-using-
 
 # c++ c++中数据类型转换有哪几种方式
 
+# 委托  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -11,7 +11,13 @@
 
 # COM 组件
 ## 官方文档
+组件对象模型 (COM)  
 (https://learn.microsoft.com/zh-cn/windows/win32/com/component-object-model--com--portal)   
+
+活动模板库 (ATL)   
+(https://learn.microsoft.com/zh-cn/cpp/atl/active-template-library-atl-concepts?view=msvc-170)  
+
+ 
 
 ## com 组件的从 0 到 1 
 (https://paper.seebug.org/2030/)   
@@ -54,6 +60,9 @@ InprocServer32表示的是dll的实现路径，LocalServer32表示的是exe的�
 
 ## COM编程攻略--系列  
 (https://zhuanlan.zhihu.com/p/121800182)  
+(https://gh0st.cn/Binary-Learning/COM%E7%BB%84%E4%BB%B6.html)  
+
+
 
 
 
