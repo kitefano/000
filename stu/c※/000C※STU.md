@@ -9,7 +9,7 @@
 
 
 
-# COM 组件
+# COM 组件 
 ## 官方文档
 组件对象模型 (COM)  
 (https://learn.microsoft.com/zh-cn/windows/win32/com/component-object-model--com--portal)   

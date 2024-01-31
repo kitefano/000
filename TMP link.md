@@ -27,6 +27,10 @@ https://learn.microsoft.com/zh-cn/windows/uwp/cpp-and-winrt-apis/intro-to-using-
 
 # 委托  
 
+# 企业架构  
+https://tonydeng.github.io/EA-practices/ea-theory/index.html#1-zachman%E7%89%B9%E7%82%B9  
+
+
 
 
 
