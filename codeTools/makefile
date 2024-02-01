@@ -10,7 +10,7 @@ MYSQL  = -I./mysql-5.7.44-winx64
 INCLUDE = -I. $(SPDLOG) $(MYSQL)
 
 # 头文件
-HEADERS = 
+HEADERS =
 # 源文件
 SOURCES = main.cpp
 # 目标文件
@@ -21,12 +21,12 @@ TARGET = mm
 
 # 构建目标
 $(TARGET): $(OBJECTS)
-	$(CC) $(INCLUDE) $(CFLAGS) -o $(TARGET) $(OBJECTS)
+        $(CC) $(INCLUDE) $(CFLAGS) -o $(TARGET) $(OBJECTS)
 
 # 编译源文件
 %.o: %.cpp $(HEADERS)
-	$(CC) $(INCLUDE) $(CFLAGS) -c $< -o $@
+        $(CC) $(INCLUDE) $(CFLAGS) -c $< -o $@
 
 # 清理
 clean:
-	rm -f $(OBJECTS) $(TARGET)
+        rm -f $(OBJECTS) $(TARGET)

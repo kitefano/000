@@ -1,5 +1,7 @@
 # mysqlStu  
+mysql教程(https://www.sjkjc.com/mysql/install-on-centos/)  
 
+# 菜鸟教程
 # mysql 管理  
 
 ## 启动和停止 MySQL 服务器

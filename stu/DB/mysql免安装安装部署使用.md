@@ -1,4 +1,4 @@
-# mysql免安装安装部署使用  
+# Windows 下 mysql 免安装安装部署使用
 参考文档(https://blog.csdn.net/salted___fish/article/details/106356078)  
 
 ## 下载  
@@ -73,4 +73,88 @@ kai@_123123
 
 登录：  
 mysql -u root -p新密码   
+
+
+
+
+
+
+# Linux 下 mysql 免安装安装部署使用
+
+## 彻底删除 MySQL 
+(https://blog.csdn.net/wisdom_80/article/details/126334716)  
+
+## 查看 MySQL 输出日志  
+```shell
+vim /var/log/mysqld.log
+```
+
+## 安装配置 MySQL  
+(https://www.runoob.com/mysql/mysql-install.html)  
+
+### 安装前，彻底删除 MySQL   
+(https://blog.csdn.net/wisdom_80/article/details/126334716) 
+我们可以检测系统是否自带安装 MySQL  
+```sh
+rpm -qa | grep mysql
+```
+如果你系统有安装，那可以选择进行卸载:  
+```sh
+rpm -e mysql　　// 普通删除模式
+rpm -e --nodeps mysql　　// 强力删除模式，如果使用上面命令删除时，提示有依赖的其它文件，则用该命令可以对其进行强力删除
+```
+
+### 安装 MySQL：
+下载MySQL：  
+https://dev.mysql.com/downloads/ --》 MySQL Yum Repository --》 选择自己想要的版本，例如：mysql80-community-release-el7-11.noarch.rpm  
+```shell
+wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+rpm -ivh mysql-community-release-el7-5.noarch.rpm
+yum update
+yum install mysql-server
+```
+
+权限设置：  
+```shell
+chown -R mysql:mysql /var/lib/mysql/
+```
+
+初始化 MySQL：  
+```shell
+mysqld --initialize  
+# 备注，可能初始化失败：
+# 查看 MySQL 日志报错：
+$ vim /var/log/mysqld.log
+--initialize specified but the data directory has files in it. Aborting.
+The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+# 解决：删除 /var/lib/mysql/ 下所有文件。
+```
+
+启动 MySQL：  
+```shell
+systemctl start mysqld
+# 报错：
+Job for mysqld.service failed because the control process exited with error code. See "systemctl status mysqld.service" and "journalctl -xe" for details.
+# 查看 MySQL 日志 ：
+## 问题一：auto.cnf 没有权限：
+mysqld: File '/var/lib/mysql/auto.cnf' not found (OS errno 13 - Permission denied)
+Failed to create file(file: '/var/lib/mysql/auto.cnf', errno 13)
+## 解决：给 auto.cnf 赋予权限： chmod 777 auto.cnf
+
+## 问题二：ibdata1 不可写  
+The innodb_system data file 'ibdata1' must be writable
+```
+
+
+
+
+A temporary password is generated for root@localhost: e>%/d!s;v7W#
+
+
+
+
+
+
+
+
 

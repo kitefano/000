@@ -128,6 +128,8 @@ copilot激活用的工具自取即可：https://www.2024ai.xyz
 
 
 # shell
+## vscode 终端连接 Linux 服务器
+
 ## vscode远程连接Linux服务器
 (https://zhuanlan.zhihu.com/p/141205262)    
 
@@ -169,7 +171,7 @@ SSH TARGETS下的服务器旁边的按钮纽行连接，弹出让你输入密码
 成功连上服务器，点击有右侧的+号创建服务器的终端窗口，可以正常使用了！  (关键点：另起一个终端。)
 
 
-## 通过vscode连接远程Linux服务器，上传下载文件
+## 通过 vscode 连接远程 Linux 服务器，上传下载文件
 使用ftp  
 (https://www.cnblogs.com/biaogejiushibiao/p/9268533.html)  
 
