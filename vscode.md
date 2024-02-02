@@ -127,8 +127,8 @@ copilot激活用的工具自取即可：https://www.2024ai.xyz
 
 
 
-# shell
-## vscode 终端连接 Linux 服务器
+
+# vscode 终端连接 Linux 服务器
 
 ## vscode远程连接Linux服务器
 (https://zhuanlan.zhihu.com/p/141205262)    
