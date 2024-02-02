@@ -16,7 +16,6 @@ alias cdl='cd ~/lxk'
 alias mc='make clean'
 alias mm='./mm'
 alias mysqlstart='service mysqld restart'
-
 ```
 
 

@@ -19,7 +19,7 @@ mysql -u root -p密码
 以下为添加用户的实例，用户名为guest，密码为guest123，并授权用户可进行 SELECT, INSERT 和 UPDATE操作权限：  
 ```shell
 # 登录  
-mysql -u root -proot@_123123
+mysql -u root -pkai@_123123
 # 进入 user 表  
 use mysql;
 
