@@ -22,6 +22,16 @@ $ cmake ..   # 此时会在build 文件夹中生成vs 的项目文件
 3. 使用vs 打开build 文件夹下的vs 项目文件， 编译链接生成库文件。  
 4. 。。。
 
+# 源码学习
+```shell
+# 1. 下载spdlog： 
+git clone https://github.com/gabime/spdlog.git
+# 2. 编译链接， 生成vs 的项目文件  
+cd spdlog && mkdir build && cd build
+cmake ..   # 此时会在build 文件夹中生成vs 的项目文件
+# 3. 使用vs 打开build 文件夹下的vs 项目文件， 编译链接生成库文件。 此时vs 项目中就有spdlog 的源码。
+```
+
 
 
 
