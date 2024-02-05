@@ -1,18 +1,23 @@
-# count per  
+# count per
 
 ## 邮箱
 
+### 谷歌邮箱
+kitefanokai@gmail.com
+
+
 ## 手机
+16699169615
+15701663357
 
 ## other
 
-### 阿里云  
+### 阿里云
 
-### 华为云  
-(https://www.huaweicloud.com/intl/zh-cn/)  
-lxk86456/kai_1*6  
+### 华为云
 
+(https://www.huaweicloud.com/intl/zh-cn/)
+lxk86456/kai_1*6
 
-
-
-
+### chatgpt
+kitefanokai@gmail.com/kai@_123456

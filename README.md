@@ -62,3 +62,7 @@ qt： (https://github.com/MEONMedical/Log4Qt)
 - (https://github.com/myhhub/Log4Qt-project)    
 - (https://github.com/amarchen/log4qt-demo-sailfish)  
 
+
+
+# 源码下载
+青狐（付费）： https://wcqh.cn/  
