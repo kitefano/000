@@ -13,6 +13,8 @@
 
 # stu  
 stu(https://github.com/kitefano/stu.git)  
+搜索技术，普通人变强的唯一外挂。全套详细宝藏教程(https://www.youtube.com/watch?v=tiN6T1LewmQ)  
+
 
 
 # tool  

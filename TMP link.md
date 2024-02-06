@@ -30,11 +30,16 @@ https://learn.microsoft.com/zh-cn/windows/uwp/cpp-and-winrt-apis/intro-to-using-
 # 企业架构  
 https://tonydeng.github.io/EA-practices/ea-theory/index.html#1-zachman%E7%89%B9%E7%82%B9  
 
+# 截图复刻网站，Github霸榜第一，单日2500+ Star，免费，快速AI生成网页 | Screenshot to Code  
+https://www.youtube.com/watch?v=6EwOQMEwngA  
 
+GPT爬虫，GitHub 万星项目，30秒创建专属问答机器人，快速抓取网站内容  
+https://www.youtube.com/watch?v=_ODWW6Wbt4Q  
 
+我做了一个AI版微信，七进七出富婆群(https://www.youtube.com/watch?v=DAF5kZvpQLA)  
 
-
-
+13款最強的AI工具，幫助10倍提升你的工作/賺錢效率(https://www.youtube.com/watch?v=XZ6FRxceBp4)  
+浏览器插件： monica  
 
 
 

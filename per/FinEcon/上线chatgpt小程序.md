@@ -1,23 +1,16 @@
 
 这个就相当于正常使用官方的 gpt:  
-https://www.bilibili.com/video/BV1iH4y1f7UA/?spm_id_from=333.337.search-card.all.click&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94
+https://www.bilibili.com/video/BV1iH4y1f7UA/?spm_id_from=333.337.search-card.all.click&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94  
 
-#GitHub Start
-140.82.114.4 github.com
-140.82.113.4 gist.github.com
-185.199.108.153 assets-cdn.github.com
-199.232.96.133 raw.githubusercontent.com
-199.232.96.133 gist.githubusercontent.com
-199.232.96.133 cloud.githubusercontent.com
-199.232.96.133 camo.githubusercontent.com
-199.232.96.133 avatars.githubusercontent.com 
-199.232.96.133 avatars0.githubusercontent.com
-199.232.96.133 avatars1.githubusercontent.com
-199.232.96.133 avatars2.githubusercontent.com
-199.232.96.133 avatars3.githubusercontent.com
-199.232.96.133 avatars4.githubusercontent.com
-199.232.96.133 avatars5.githubusercontent.com
-199.232.96.133 avatars6.githubusercontent.com
-199.232.96.133 avatars7.githubusercontent.com
-199.232.96.133 avatars8.githubusercontent.com
-#GitHub End
+
+教你搭建ChatGPT离线版！无网也能用！  
+https://www.bilibili.com/video/BV1NN4y1x7NS/?spm_id_from=333.337.search-card.all.click&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94  
+https://www.bilibili.com/video/BV1TC4y1B7uj/?spm_id_from=autoNext&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94  
+下载 GPT4ALL
+
+国产chatgpt？GPT3.0版本小程序0基础部署教程  
+https://www.bilibili.com/video/BV1Ny4y1R7Wz/?spm_id_from=333.337.search-card.all.click&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94  
+
+
+gpt智能AI系统-公众号-小程序-web端  
+https://www.bilibili.com/video/BV1ic411M7sq/?spm_id_from=333.337.search-card.all.click&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94  
