@@ -1,0 +1,26 @@
+﻿VPN登录方式：
+可通过互联网在浏览器输入https://vpn.urumqiyun.cn:64439下载EasyConnect客户端
+连接服务器即为https://vpn.urumqiyun.cn:64439
+
+
+
+vpn:根据不同的运营商线路，在浏览器中输入 
+https://117.190.16.2:64439（移动）
+https://220.171.134.2:64439（电信）
+https://124.88.99.98:64439（联通）下载 VPN 客户端， 这里选择移动接入。
+
+
+
+有用的数据-------------------------------------------------------------------------
+1.VPN
+https://vpn.urumqiyun.cn:64439
+用户：hjj_wangqing   密码： Wlmq&ydzf004
+
+2.堡垒机（https://172.22.21.99）
+用户：hjj_wangqing   密码：Wlmq&ydzf004
+
+
+
+3.服务器
+172.22.21.25（应用服务器） administrator/NU2T*2aZ
+172.22.21.26（数据库服务器） administrator/7nLf!2VJ
