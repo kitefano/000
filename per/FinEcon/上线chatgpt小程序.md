@@ -13,4 +13,4 @@ https://www.bilibili.com/video/BV1Ny4y1R7Wz/?spm_id_from=333.337.search-card.all
 
 
 gpt智能AI系统-公众号-小程序-web端  
-https://www.bilibili.com/video/BV1ic411M7sq/?spm_id_from=333.337.search-card.all.click&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94  
+https://www.bilibili.com/video/BV1ic411M7sq/?spm_id_from=333.337.search-card.all.click&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94    
