@@ -1,4 +1,10 @@
 
+
+
+
+ChatGPT 是少数强者的【外挂】  https://www.youtube.com/watch?v=blzRseRmEJk  
+
+
 开箱即用(https://neo.org/)  
 
 GitHub 70k star！神级霸榜！优质中文编程项目全汇总  
@@ -43,11 +49,15 @@ https://www.youtube.com/watch?v=_ODWW6Wbt4Q
 
 
 
+5分支把GPT接入到微信机器人?!AI时代零基础小白都会   
+https://www.youtube.com/watch?v=Rwv_88MqizY   
+https://www.youtube.com/watch?v=ctd-EKigRtE   
 
 
 
+我用AI开了家软件公司，然后去猪八戒接单   https://www.youtube.com/watch?v=3WckUql8zyY   
 
-
+提升编程能力的终极方法：自己造轮子  https://www.youtube.com/watch?v=WITxT9Da5s8    
 
 
 
