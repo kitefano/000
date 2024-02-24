@@ -103,24 +103,6 @@ git config --global https.proxy http://127.0.0.1:10809
 段： 结尾空两格， 另起一行，再空一行。  
 
 
-# copilot
-## Copilot免费激活教程方法  
-(https://www.bilibili.com/video/BV1pu4y1K7h1/?spm_id_from=autoNext&vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94)  
-内容：  
-copilot激活用的工具自取即可：https://www.2024ai.xyz  
-工具的文档：https://www.kdocs.cn/l/clRGREhjMwEW  
-免费的码：https://www.2024ai.xyz/freeCode.html  
-一个月的激活码：   
-20240121JHPXFSYD  
-20240123FQMMYC60  
-激活的时候VScode要退出GitHub账号  
-
-## 使用：  
-(https://www.youtube.com/watch?v=49nFJJuYIFg)  
-(https://www.youtube.com/watch?v=wRsgeBoi2_A)  
-(https://www.youtube.com/watch?v=Odmm8CJO8Xw)  
-
-
 # codeium
 ## vscode 中搜索 安装
 
