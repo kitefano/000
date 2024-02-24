@@ -37,20 +37,21 @@ git remote add origin https://github.com/kitefano/huashan
 3. 把这个路径放到`.gitignore`文件里。被复制进这个文件的文件会变灰色。  
 4. 这样上传就会不上传这些文件了。  
 
+
 ## 设置代理
 1. 查看git配置  
 ```
-$ git config --list  
+git config --list  
 ```
 2. 清理代理  
 ```
-$ git config --global --unset http.proxy  
-$ git config --global --unset https.proxy  
+git config --global --unset http.proxy  
+git config --global --unset https.proxy  
 ```
 3. 设置代理  
 ```
-$ git config --global http.proxy http://127.0.0.1:10809  
-$ git config --global https.proxy http://127.0.0.1:10809  
+git config --global http.proxy http://127.0.0.1:10809  
+git config --global https.proxy http://127.0.0.1:10809  
 ```
 验证设置代理是否有效：  
 ```
