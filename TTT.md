@@ -15,3 +15,16 @@
 移动电子签章管理： 提议对移动电子签章的使用和管理进行规范，明确相关操作流程和责任分工，移动端签章时采用协同签名模式以保障签章过程的安全和有效性。
 
 以上三点建议可以进一步强化电子印章管理办法的实施效果，确保印章的合法性和安全性，同时规范移动电子签章的使用，以提高整体管理水平和效率。
+
+
+
+
+https://zhaocai.xjjtkj.cn:8052/#/web/announcement/notification?id=147&type=notification&category=toolDownload  
+https://zhaocai.xjjttzjt.cn:8052/#/web/announcement/notification?id=147&type=notification&category=toolDownload  
+
+
+
+3d9b8674f4b94f6  
+3d9b8674f4b94f6  
+
+aaaa

@@ -59,6 +59,6 @@ https://www.youtube.com/watch?v=ctd-EKigRtE
 
 提升编程能力的终极方法：自己造轮子  https://www.youtube.com/watch?v=WITxT9Da5s8    
 
-
-
+AI声音克隆+Sora开源平替一键启动，全网最简单  
+https://www.bilibili.com/video/BV1WC411W79t/?vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94   
 

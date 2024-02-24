@@ -68,3 +68,8 @@ qt： (https://github.com/MEONMedical/Log4Qt)
 
 # 源码下载
 青狐（付费）： https://wcqh.cn/  
+
+
+# chatgpt  
+chatgpt 调教： https://github.com/PlexPt/awesome-chatgpt-prompts-zh  
+chatgpt 资料： https://chatgpt123.com/  
