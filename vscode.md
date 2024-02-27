@@ -159,7 +159,7 @@ SSH TARGETS下的服务器旁边的按钮纽行连接，弹出让你输入密码
 (https://www.cnblogs.com/biaogejiushibiao/p/9268533.html)  
 
 ## 错误处理
-1. 如果登录的Linux 机器已经释放了， 重新又建立了一个Linux， 但是ip 没有变，此时需要删除原来机器的key，才能再登录：
+1. 如果登录的阿里云服务器已经重做系统了， 但是ip 没有变，此时需要删除原来机器的key，才能再登录：
 ```shell
 # 删除命令
 ssh-keygen -R 123.60.60.85

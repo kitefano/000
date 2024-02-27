@@ -254,7 +254,12 @@ tail -f /var/log/mysqld.log
 ## linux 中 mysql 密码
 kai@_123123   
 
-# centos 下MySQL 操作
+
+# centos下彻底删除mysql 数据库
+
+
+
+# centos 下MySQL 基本操作
 ```shell
 # 停止 MySQL：
 sudo systemctl stop mysqld
