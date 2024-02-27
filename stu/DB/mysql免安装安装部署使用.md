@@ -254,6 +254,21 @@ tail -f /var/log/mysqld.log
 ## linux 中 mysql 密码
 kai@_123123   
 
+# centos 下MySQL 操作
+```shell
+# 停止 MySQL：
+sudo systemctl stop mysqld
+
+# 启动 MySQL 服务：
+sudo systemctl start mysqld
+
+# 重启 MySQL 服务器
+sudo systemctl restart mysqld
+
+# 退出 MySQL：
+exit;
+```
+
 
 
 
