@@ -4,17 +4,36 @@
 ```shell
 $ vim .vimrc
 
-# add by lxk@date for 添加配置
-syntax on
+" add by lxk@date for 添加配置
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set autoindent
 set cindent
-hi Comment ctermfg=6
 
 ```
-## 转贴代码串行
+
+
+# .bashrc
+```shell
+$ vim .bashrc
+
+# add by lxk@date for 添加配置
+alias lt='ls -ltr'
+alias c='clear'
+alias cdl='cd ~/lxk'
+alias mc='make clean'
+alias mm='./mm'
+alias mysqlstart='service mysqld restart'
+alias cmc='rm -rf CMakeFiles CMakeCache.txt'
+alias cmake='cmake3'
+
+```
+
+# git 项目  
+
+
+# 转贴代码串行
 (https://blog.csdn.net/wzy_1988/article/details/50264285)  
 ```shell
 # vim进入paste模式，命令如下：
@@ -36,22 +55,5 @@ hi Comment ctermfg=6
 ## formatoptions使用空值
 
 ```
-
-# .bashrc
-```shell
-$ vim .bashrc
-
-# add by lxk@date for 添加配置
-alias lt='ls -ltr'
-alias c='clear'
-alias cdl='cd ~/lxk'
-alias mc='make clean'
-alias mm='./mm'
-alias mysqlstart='service mysqld restart'
-alias cmc='rm -rf CMakeFiles CMakeCache.txt'
-alias cmake='cmake3'
-
-```
-
 
 
