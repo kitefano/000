@@ -20,16 +20,16 @@ sage(年龄)
 ssex(性别)
 
 ## sc
-sid (外钟)
+sid (外键)
 cid(外键)
 score(成绩)  
 
 ## course 课程
 cid(课程ID)
 cname(课程名)
-tid(外钟)  
+tid(外键)  
 
-## teacher 软
+## teacher 教师  
 tid(主键ID)
 tname(教师名称)  
 

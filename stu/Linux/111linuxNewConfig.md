@@ -52,10 +52,19 @@ git clone https://github.com/kitefano/000.git
 Cloning into 'mbedtls'...
 fatal: unable to access 'https://github.com/kitefano/mbedtls.git/': Peer reports incompatible or unsupported protocol version.
 # 解决：
- 更新完 centos中Yum 软件信息 就可以啦。  
+ 更新完 centos中Yum 软件信息 
 # 命令： 
 sudo yum upgrade
 sudo yum makecache
+
+# 报错信息：  
+[lxk@iZbp1b5vxiz2fe1ujyq0jaZ ~]$ git clone https://github.com/kitefano/000.git
+Cloning into '000'...
+Missing or invalid credentials.
+Error: connect ENOENT /run/user/1000/vscode-git-cd151dcd95.sock
+# 报错原因：
+这个错误表明 Git 无法找到有效的凭据来进行克隆操作，并且还指示了一个与 VS Code 相关的套接字文件丢失的错误。这可能是由于凭据问题或与 VS Code 的集成问题导致的。  
+# 解决： 000.git 是私有库才报这个错， 设置为public 就可以啦。  
 ```
 
 

@@ -46,7 +46,7 @@ git config --list
 2. 清理代理  
 ```
 git config --global --unset http.proxy  
-git config --global --unset https.proxy  
+git config --global --unset https.proxy   
 ```
 3. 设置代理  
 ```
@@ -61,30 +61,7 @@ git config --global https.proxy http://127.0.0.1:10809
 4. 10809在哪里获取  
 在vpn中获取。  
 
-## ping 不通github.cm 
-以记事本管理员身份打开C:\Windows\System32\drivers\etc\hosts  
-添加如下内容：  
-```shell
-#GitHub Start
-140.82.114.4 github.com
-140.82.113.4 gist.github.com
-185.199.108.153 assets-cdn.github.com
-199.232.96.133 raw.githubusercontent.com
-199.232.96.133 gist.githubusercontent.com
-199.232.96.133 cloud.githubusercontent.com
-199.232.96.133 camo.githubusercontent.com
-199.232.96.133 avatars.githubusercontent.com 
-199.232.96.133 avatars0.githubusercontent.com
-199.232.96.133 avatars1.githubusercontent.com
-199.232.96.133 avatars2.githubusercontent.com
-199.232.96.133 avatars3.githubusercontent.com
-199.232.96.133 avatars4.githubusercontent.com
-199.232.96.133 avatars5.githubusercontent.com
-199.232.96.133 avatars6.githubusercontent.com
-199.232.96.133 avatars7.githubusercontent.com
-199.232.96.133 avatars8.githubusercontent.com
-#GitHub End
-```
+
 
 
 
