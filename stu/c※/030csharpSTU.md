@@ -26,3 +26,8 @@ using (var connection = new MySqlConnection(connectionString))
 }
 ```
 
+# Nuget下载 MySql.Data 连接MySql数据库 问题 总结  
+https://www.cnblogs.com/li150dan/p/10101187.html  
+
+
+
