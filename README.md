@@ -74,3 +74,6 @@ qt： (https://github.com/MEONMedical/Log4Qt)
 chatgpt 调教： https://github.com/PlexPt/awesome-chatgpt-prompts-zh  
 chatgpt 资料： https://chatgpt123.com/  
 AI声音克隆+Sora开源平替一键启动，全网最简单：https://www.bilibili.com/video/BV1WC411W79t/?vd_source=1b7b5e78fade47ae4d4c4cb7dd302b94   
+
+
+
