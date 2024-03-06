@@ -145,5 +145,9 @@ ssh-keygen -R 123.60.60.85
 
 
 
+# vscode 中好用的插件
+## batch rename
+## batch runner
+
 
 
