@@ -1,6 +1,6 @@
 # 000python
 
-# 教程
+# 教程--廖雪峰  
 廖雪峰的官方网站：  https://www.liaoxuefeng.com/wiki/1016959663602400  
 
 # 基本知识  
@@ -62,7 +62,12 @@ print('''line1
 line2
 line3''')
 
+# 布尔值
 布尔值和布尔代数的表示完全一致，一个布尔值只有True、False两种值，要么是True，要么是False，在Python中，可以直接用True、False表示布尔值（请注意大小写）  
+布尔值可以用and、or和not运算。
+and运算是与运算，只有所有都为True，and运算结果才是True
+or运算是或运算，只要其中有一个为True，or运算结果就是True
+not运算是非运算，它是一个单目运算符，把True变成False，False变成True
 >>> True
 True
 >>> False
@@ -71,6 +76,75 @@ False
 True
 >>> 3 > 5
 False
+>>> not 1>2  
+True
+>>> not True 
+False
+>>> True and False
+False
+>>> True or False  
+True 
 
+# 空值
+空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值  
 
 ```
+
+## 变量  
+```shell
+# 变量命名规则
+变量在程序中就是用一个变量名表示了，变量名必须是大小写英文、数字和_的组合，且不能用数字开头  
+## 变量a是一个整数。
+a = 1
+## 变量t_007是一个字符串。
+t_007 = 'T007'
+##变量Answer是一个布尔值True
+Answer = True
+
+# 动态语言和静态语言
+## 动态语言（弱类型语言）是运行时才确定数据类型的语言，变量在使用之前无需申明类型，通常变量的值是被赋值的那个值的类型。比如Php、Asp、JavaScript、Python、Perl等等， 例如python中：可以把任意数据类型赋值给变量，同一个变量可以反复赋值，而且可以是不同类型的变量
+a = 123 # a是整数
+print(a)
+a = 'ABC' # a变为字符串
+print(a)
+
+## 静态语言（强类型语言）是编译时变量的数据类型就可以确定的语言，大多数静态语言要求在使用变量之前必须生命数据类型。比如Java、C、C++、C#等。例如C语言中：
+int a = 123; // a是整数类型变量
+a = "ABC"; // 错误：不能把字符串赋给整型变量
+
+```
+
+## 常量  
+```shell
+所谓常量就是不能变的变量，比如常用的数学常数π就是一个常量。在Python中，通常用全部大写的变量名表示常量：
+PI = 3.14159265359
+但事实上PI仍然是一个变量，Python根本没有任何机制保证PI不会被改变，所以，用全部大写的变量名表示常量只是一个习惯上的用法，如果你一定要改变变量PI的值，也没人能拦住你。
+```
+
+## python中的除法
+```shell
+# 第一种除法： / 除法计算结果是浮点数，即使是两个整数恰好整除，结果也是浮点数
+>>> 10 / 3
+3.3333333333333335
+>>> 9 / 3
+3.0
+# 第二种除法： //，称为地板除，两个整数的除法仍然是整数
+>>> 10 // 3
+3
+
+```
+## 导入模块
+```shell
+# 这段代码会显示没有：No module named 'requests'
+import requests
+# 方法一：在命令行中输入
+pip install requests
+# 方法二： 在pycharm中的软件包中搜索，然后导入
+
+```
+
+
+# 教程--小甲鱼
+https://fishc.com.cn/forum.php?mod=forumdisplay&fid=360&filter=typeid&typeid=769  
+
+
