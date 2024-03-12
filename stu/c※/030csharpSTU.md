@@ -31,12 +31,12 @@ https://www.cnblogs.com/li150dan/p/10101187.html
 
 
 
-# csharp 官方文档
+# dotnet 官方文档
 https://learn.microsoft.com/zh-cn/dotnet/  
 
 ## .net入门：  
 https://learn.microsoft.com/zh-cn/dotnet/core/get-started    
-命令行创建运行 .net 项目：  
+### vscode 中命令行创建运行 .net 项目：  
 ```shell
 首先，在计算机上下载并安装 .NET SDK。
 然后，打开某一终端，如 PowerShell、命令提示符或 Bash 。
@@ -50,3 +50,15 @@ Hello World!
 
 ```
 
+dotnet 和csharp 区别和联系：  
+```shell
+C#是一种编译语言，不是脚本语言。  
+.NET 是 开发平台
+,NET有三个版本：.NET Framework，.NET Core和Xamarin。这些实现组合称为.NET开发平台。它们中的每一个都包含用于构建各种应用程序和库。
+```
+
+### vs中创建.net项目  
+
+
+# csharp 官方文档
+https://learn.microsoft.com/zh-cn/dotnet/csharp/tour-of-csharp/  
