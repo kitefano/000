@@ -31,3 +31,22 @@ https://www.cnblogs.com/li150dan/p/10101187.html
 
 
 
+# csharp 官方文档
+https://learn.microsoft.com/zh-cn/dotnet/  
+
+## .net入门：  
+https://learn.microsoft.com/zh-cn/dotnet/core/get-started    
+命令行创建运行 .net 项目：  
+```shell
+首先，在计算机上下载并安装 .NET SDK。
+然后，打开某一终端，如 PowerShell、命令提示符或 Bash 。
+键入以下命令：
+dotnet new console -o sample1
+cd sample1
+dotnet run
+
+应会看到以下输出：
+Hello World!
+
+```
+
