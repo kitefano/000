@@ -62,3 +62,43 @@ C#是一种编译语言，不是脚本语言。
 
 # csharp 官方文档
 https://learn.microsoft.com/zh-cn/dotnet/csharp/tour-of-csharp/  
+
+
+
+# csharp的入参和出参  
+ref 和 out   
+
+# csharp 中 分割c 字符串
+c字符串以单个'\0'结束，以双'\0'表示列表的结束。  
+```c#
+private static string[] GetDeviceNames(IntPtr szNameList)
+{
+    int index = 0;
+    string deviceName = "";
+    string[] returnString = new string[5];
+    int stringIndex = 0;
+    while (true)
+    {
+        byte currentByte = Marshal.ReadByte(szNameList, index);
+        if (currentByte == 0)
+        {
+            // 到达设备名称的结尾
+            returnString[stringIndex++] = deviceName;
+            deviceName = ""; // 清空设备名称
+            index++; // 跳过 '\0'
+            if (Marshal.ReadByte(szNameList, index) == 0)
+            {
+                // 如果下一个字节也是 '\0'，表示设备名称列表结束
+                break;
+            }
+        }
+        else
+        {
+            // 继续构建设备名称
+            deviceName += (char)currentByte;
+            index++;
+        }
+    }
+    return returnString;
+}
+```
