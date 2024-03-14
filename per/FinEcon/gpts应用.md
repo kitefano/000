@@ -13,3 +13,23 @@ https://www.youtube.com/watch?v=wJIEGskhDEI
 无死角的AI微信：自动回复+智能转人工，无缝衔接、效率翻10倍！  
 https://www.youtube.com/watch?v=0C76VvCjkwA  
 
+GPTs 商店来袭！详解GPTs的使用、盈利途径和高级玩法！
+https://www.youtube.com/watch?v=V-BHArULeNY  
+https://www.tianapi.com/  
+
+
+# 第三方api 平台  
+## gapier  
+https://gapier.com/  
+
+## tianapi  
+https://www.tianapi.com/  
+
+## 语聚AI  
+https://chat.jijyun.cn/auth/login  
+
+## coze  
+https://www.coze.com/  
+
+## 集简云：  
+https://www.jijyun.cn/
