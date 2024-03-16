@@ -31,7 +31,7 @@ kitefanokai@gmail.com
 ### [300 Prompt](https://www.notion.so/300-Prompt-6f8827528577406dbb6f9fdecbb77eb6?pvs=21) 
 
 - [欧易-web3钱包](https://www.thebitcoinfi.com/cn/join/120btc)
-    - 密码：Kkl@_123123
+    - 密码：Kkl@_1231
     - 助记词
         hamster relax  middle
         message  describe  melody  
