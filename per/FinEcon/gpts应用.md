@@ -32,4 +32,4 @@ https://chat.jijyun.cn/auth/login
 https://www.coze.com/  
 
 ## 集简云：  
-https://www.jijyun.cn/
+https://www.jijyun.cn/  
