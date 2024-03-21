@@ -102,3 +102,83 @@ private static string[] GetDeviceNames(IntPtr szNameList)
     return returnString;
 }
 ```
+
+
+# csharp 中调用js中代码：
+```c#
+private void Button_Click_5(object sender, RoutedEventArgs e)
+{
+    string path = AppDomain.CurrentDomain.BaseDirectory + "test.js";
+    string str2 = File.ReadAllText(path);
+    string fun = string.Format(@"seHello('{0}')", "world");
+    string result = ExecuteScript(fun, str2);
+}
+private string ExecuteScript(string sExpression, string sCode)
+{
+    MSScriptControl.ScriptControl scriptControl = new MSScriptControl.ScriptControl();
+    scriptControl.UseSafeSubset = true;
+    scriptControl.Language = "JScript";
+    scriptControl.AddCode(sCode);
+    try
+    {
+        string str = scriptControl.Eval(sExpression).ToString();
+        return str;
+    }
+    catch (Exception ex)
+    {
+        string str = ex.Message;
+    }
+    return null;
+}
+```
+```js
+// test.js  
+function sayHello(str) {
+    return "Hello," + str;
+}
+```
+
+
+# csharp 中获取html 中js 代码的变量值和函数返回值
+```html
+<html>
+<head>
+    <title>mToken Plugin Examples</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/syalert.min.css" />
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<body>
+    <script>
+        function sayHello() {
+            return "hello1111";
+        }
+        
+    </script>
+</body>
+</html>
+```
+```c#
+private void Button_Click_5(object sender, RoutedEventArgs e)
+{
+    // 获取当前应用程序的执行目录
+    string currentDirectory = Directory.GetCurrentDirectory();
+    // 构建相对路径
+    string relativePath = System.IO.Path.Combine(currentDirectory, "Sample", "content", "mTokenOperateCer111.html");
+    // 将相对路径转换为文件 URI
+    Uri htmlUri = new Uri(relativePath);
+    // 加载 HTML 文件
+    webBrowser1.Navigate(htmlUri);
+    // 调用 JavaScript 函数
+    // string result = (string)webBrowser1.InvokeScript("sayHello");
+    string script = "sayHello();"; // 调用 JavaScript 函数
+    string result = (string)webBrowser1.InvokeScript("eval", script);
+    string resul1t = (string)webBrowser1.InvokeScript("eval", "he111");
+}
+```
+
+
+
+
+
+# END
