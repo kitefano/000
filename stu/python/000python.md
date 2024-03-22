@@ -144,7 +144,10 @@ pip install requests
 ```
 
 
-# 教程--小甲鱼
+
+
+
+# 教程--小甲鱼 - 收费  
 https://fishc.com.cn/forum.php?mod=forumdisplay&fid=360&filter=typeid&typeid=769  
 
 

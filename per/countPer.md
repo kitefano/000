@@ -1,5 +1,12 @@
 # count per
 
+## 终身会员 
+```shell
+# 小甲鱼： https://fishc.com.cn/    kitefano001/Kkl9494258  
+
+```
+
+
 ## 邮箱
 
 ### 谷歌邮箱
