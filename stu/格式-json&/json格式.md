@@ -1,4 +1,9 @@
 
+# json 在线工具
+解析前要确保你的数据是标准的 JSON 格式，否则会解析出错。
+你可以使用我们的在线工具检测： https://www.jyshare.com/front-end/53。  
+
+
 # 教程
 https://www.runoob.com/json/json-syntax.html  
 
@@ -101,6 +106,7 @@ JavaScript 中，数组值可以是以上的 JSON 数据类型，也可以是 Ja
 x = myObj.sites[0];
 
 
+
 # 循环数组 
 ## 你可以使用 for-in 来访问数组：
 for (i in myObj.sites) {
@@ -114,9 +120,7 @@ for (i = 0; i < myObj.sites.length; i++) {
 
 
 
-
 # 嵌套 JSON 对象中的数组
-
 ## JSON 对象中数组可以包含另外一个数组，或者另外一个 JSON 对象：
 myObj = {
     "name":"网站",
@@ -127,17 +131,60 @@ myObj = {
         { "name":"Taobao", "info":[ "淘宝", "网购" ] }
     ]
 }
+## 我们可以使用 for-in 来循环访问每个数组：
+for (i in myObj.sites) {
+    x += "<h1>" + myObj.sites[i].name + "</h1>";
+    for (j in myObj.sites[i].info) {
+        x += myObj.sites[i].info[j] + "<br>";
+    }
+}
 
 
 
+# 修改数组值
+你可以使用索引值来修改数组值：
+myObj.sites[1] = "Github";
 
 
 
+# 删除数组元素
+我们可以使用 delete 关键字来删除数组元素：
+delete myObj.sites[1];
 
 
 ```
 
 
+# JSON.parse()
+```sh
+JSON 通常用于与服务端交换数据。
+
+在接收服务器数据时一般是字符串。
+
+我们可以使用 JSON.parse() 方法将数据转换为 JavaScript 对象。
+
+# 语法
+JSON.parse(text[, reviver])
+参数说明：
+text:必需， 一个有效的 JSON 字符串。
+reviver: 可选，一个转换结果的函数， 将为对象的每个成员调用此函数。
+
+# JSON 解析实例
+## 例如我们从服务器接收了以下数据：
+{ "name":"runoob", "alexa":10000, "site":"www.runoob.com" }
+## 我们使用 JSON.parse() 方法处理以上数据，将其转换为 JavaScript 对象：
+var obj = JSON.parse('{ "name":"runoob", "alexa":10000, "site":"www.runoob.com" }');
+
+解析前要确保你的数据是标准的 JSON 格式，否则会解析出错。
+你可以使用我们的在线工具检测：https://www.jyshare.com/front-end/53。
+
+## 解析完成后，我们就可以在网页上使用 JSON 数据了：
+<p id="demo"></p> 
+<script>
+var obj = JSON.parse('{ "name":"runoob", "alexa":10000, "site":"www.runoob.com" }');
+document.getElementById("demo").innerHTML = obj.name + "：" + obj.site;
+</script>
+```
 
 
 
