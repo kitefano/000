@@ -179,6 +179,179 @@ private void Button_Click_5(object sender, RoutedEventArgs e)
 
 
 
+# json序列号和反序列化
+1. 添加程序集合： System.Web.Extensions.dll
+2. 命名空间引用： using System.Web.Script.Serialization;
+
+
+```shell
+#if true1
+{
+   "name":"John",
+   "age":30,
+   "address":    {
+        "street":"123 Main St",
+        "city":"New York",
+        "zip":"10001" 
+    },
+   "contacts":[{
+               "type":"email",
+               "value":"john@example.com" 
+            },            
+            {
+               "type":"phone",
+               "value":"123-456-7890" 
+            }
+    ]
+}
+
+{
+   "contacts":[{
+               "type":"email",
+               "value":"john@example.com" 
+            },            
+            {
+               "type":"phone",
+               "value":"123-456-7890" 
+            }
+    ]
+}
+#endif
+
+using System;
+using System.Collections.Generic;
+using System.Web.Script.Serialization;
+
+class Program
+{
+    static void Main()
+    {
+        // json 串
+        string strJson = "{\"contacts\":[{\"type\":\"email\",\"value\":\"john@example.com\"},{\"type\":\"phone\",\"value\":\"123-456-7890\"}]}";
+
+        // 反序列化 JSON 字符串为动态对象
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        dynamic jsonObj = serializer.Deserialize<dynamic>(strJson);
+
+        // 检查是否包含 contacts 属性
+        if (jsonObj.ContainsKey("contacts"))
+        {
+            // 获取 contacts 属性值
+            var contacts = jsonObj["contacts"];
+            List<Dictionary<string, object>> lstDic = new List<Dictionary<string, object>>();
+            // 遍历 contacts 并输出值
+            foreach (var contact in contacts)
+            {
+                lstDic.Add(contact);
+                string str111 = ((Dictionary<string, object>)lstDic[0])["type"].ToString();
+                Console.WriteLine("Type: {0}, Value: {1}", contact["type"], contact["value"]);
+            }
+            foreach(var contact in lstDic)
+            {
+                string str111 = contact["type"].ToString();
+                string str222 = contact["value"].ToString();
+            }
+
+            string str112 = ((Dictionary<string, object>)lstDic[0])["type"].ToString();
+        }
+        else
+        {
+            Console.WriteLine("JSON data does not contain 'contacts' property.");
+        }
+
+    }
+}
+
+```
+
+
+# 网络通信 post请求
+```shell
+# System.Net.Http 4.0.0 包是针对 .NET Framework 4.0 及更高版本的
+public string ReqstData(string requestData, string strUrl)
+{
+    // 构建请求数据
+    //requestData = $"{{\"dev\":\"{1}\"}}";
+    // 设置请求的 URL
+    //strUrl = "http://" + 1 + "/biz/change/changeQuery";
+    // 构建 HTTP 请求对象
+    HttpClient httpClient = new HttpClient();
+    // 发送 POST 请求
+    string responseBody = "";
+    HttpResponseMessage response;
+    try
+    {
+        response = httpClient.PostAsync(strUrl, new StringContent(requestData, System.Text.Encoding.UTF8, "application/json")).Result;
+        // 检查响应是否成功
+        if (response.IsSuccessStatusCode)
+        {
+            // 读取响应内容
+            responseBody = response.Content.ReadAsStringAsync().Result;
+            return responseBody;
+        }
+        else
+        {
+            return "ERR: 查询证书申请变更状态 失败。";
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show($"ERR: {ex.Message}");
+        return "发送 POST 请求 异常。";
+    }
+    return "";
+}
+
+#  .NET Framework 3.5  使用 .NET Framework 3.5 内置的 HttpWebRequest 类来进行 HTTP 请求。 
+public string ReqstData(string requestData, string strUrl)
+{
+    // 创建 HTTP 请求对象
+    HttpWebRequest request = (HttpWebRequest)WebRequest.Create(strUrl);
+    request.Method = "POST";
+    request.ContentType = "application/json";
+
+    try
+    {
+        // 将请求数据写入请求流
+        using (var streamWriter = new StreamWriter(request.GetRequestStream()))
+        {
+            streamWriter.Write(requestData);
+            streamWriter.Flush();
+        }
+
+        // 获取响应
+        using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+        using (Stream responseStream = response.GetResponseStream())
+        using (StreamReader reader = new StreamReader(responseStream))
+        {
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                // 读取响应内容
+                string responseBody = reader.ReadToEnd();
+                return responseBody;
+            }
+            else
+            {
+                return "ERR: 查询证书申请变更状态 失败。";
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show($"ERR: {ex.Message}");
+        return "发送 POST 请求 异常。";
+    }
+}
+
+
+```
+
+
+
+
+
+
+
 
 
 # END
